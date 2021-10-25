@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axie Infinity Calculator</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="container__roundCounter">
+            <label class="roundCounter__label">Ronda #</label>
+            <label class="roundCounter__number">1</label>
+        </div>
+        <div class="container__counter">
+            <img src="img/energy1.svg" alt="energy" class="counter__energy">
+            <label class="counter__label">:</label>
+            <label class="counter__number">3</label>
+        </div>
+
+        <div class="buttons">
+            <input class="label__button subtract-energy" type="button" value="➖" onclick="alterateEnergy('sub')">
+            <input class="label__button summary-energy" type="button" value="➕" onclick="alterateEnergy('sum')">
+        </div>
+
+        <div class="activate-sumAndrest">
+            <input id="activateCheckbox" type="checkbox">
+            <label>Activar suma y resta de energia</label>
+        </div>
+
+        <div class="container__controllers">
+
+
+            <div class="controllers__earn">
+                <label class="cont__label earn__label">
+                    <span class="earn__label__sign"></span>
+                    <span class="earn__label__number">0</span>
+                </label>
+                <input type="button" value="Gana" onclick="Earn()">
+                <input class="subtract-button subtract-earn" type="button" value="➖" onclick="Substract('earn')">
+            </div>
+
+
+            <div class="controllers__spend">
+                <label class="cont__label spend__label">
+                    <span class="spend__label__sign"></span>
+                    <span class="spend__label__number">0</span>
+                </label>
+                <input type="button" value="Gasta" onclick="Spend()">
+                <input class="subtract-button subtract-spend" type="button" value="➖" onclick="Substract('spend')">
+            </div>
+
+            <div class="controllers__stole">
+                <label class="cont__label stole__label">
+                    <span class="stole__label__sign"></span>
+                    <span class="stole__label__number">0</span>
+                </label>
+                <input type="button" value="Robas" onclick="Stole()">
+                <input class="subtract-button subtract-stole" type="button" value="➖" onclick="Substract('stole')">
+            </div>
+
+
+        </div>
+        <div class="container__done">
+            <input type="button" value="Hecho" onclick="Done()">
+        </div>
+        <div class="container__reset">
+            <input type="button" value="Reiniciar" onclick="Reset()">
+        </div>
+        <nav>
+            <label>Otras utilidades:</label>
+            <ul>
+                <li><a href="daily-slp.html">Control de SLP diario</a></li>
+                <li><a href="table-slp.html">Tabla de producción</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="background-image"></div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+.container__table {
+    display: grid;
+    width: 80%;
+    grid-template-columns: 200px 1fr;
+    background-color: rgb(255, 255, 255, .5);
+}
+
+.date, .slp {
+    border: 2px solid rgb(0, 0, 0);
+    padding: 1rem;
+    color:rgb(255, 230, 0);
+    font-size: 1.3rem;
+}
+
+.date {
+    font-weight: 800;
+    text-decoration: underline black;
+}
+
+.noDBfind {
+    font-size: 2rem;
+}

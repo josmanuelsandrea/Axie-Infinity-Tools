@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Production</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+    <div class="container">
+        <div class="container__slp">
+            <div class="slp__section slp__3">
+                <label>3 <img class="SmoothLovePotion" src="img/SmoothLovePotion.png" alt="SmoothLovePotion"></label>
+                <div>
+                    <input class="numberBox number__3" type="number" disabled value="0">
+                </div>
+                <div>
+                    <input type="button" value="➕" onclick="Summary(3)">
+                    <input type="button" value="➖" onclick="Substract(3)">
+                </div>
+            </div>
+            <div class="slp__section slp__6">
+                <label>6 <img class="SmoothLovePotion" src="img/SmoothLovePotion.png" alt="SmoothLovePotion"></label>
+                <div>
+                    <input class="numberBox number__6" type="number" disabled value="0">
+                </div>
+                <div>
+                    <input type="button" value="➕" onclick="Summary(6)">
+                    <input type="button" value="➖" onclick="Substract(6)">
+                </div>
+            </div>
+            <div class="slp__section slp__9">
+                <label>9 <img class="SmoothLovePotion" src="img/SmoothLovePotion.png" alt="SmoothLovePotion"></label>
+                <div>
+                    <input class="numberBox number__9" type="number" disabled value="0">
+                </div>
+                <div>
+                    <input type="button" value="➕" onclick="Summary(9)">
+                    <input type="button" value="➖" onclick="Substract(9)">
+                </div>
+            </div>
+            <div class="slp__section slp__12">
+                <label>12 <img class="SmoothLovePotion" src="img/SmoothLovePotion.png" alt="SmoothLovePotion"></label>
+                <div>
+                    <input class="numberBox number__12" type="number" disabled value="0">
+                </div>
+                <div>
+                    <input type="button" value="➕" onclick="Summary(12)">
+                    <input type="button" value="➖" onclick="Substract(12)">
+                </div>
+            </div>
+            <div class="slp__section slp__15">
+                <label>15 <img class="SmoothLovePotion" src="img/SmoothLovePotion.png" alt="SmoothLovePotion"></label>
+                <div>
+                    <input class="numberBox number__15" type="number" disabled value="0">
+                </div>
+                <div>
+                    <input type="button" value="➕" onclick="Summary(15)">
+                    <input type="button" value="➖" onclick="Substract(15)">
+                </div>
+            </div>
+            <div class="slp__section slp__15">
+                <label><img class="SmoothLovePotion" src="img/SmoothLovePotion.png" alt="SmoothLovePotion">Adicionales</label>
+                <div>
+                    <input class="numberBoxAditional number__15" type="number" value="0">
+                </div>
+            </div>
+        </div>
+        <div class="container__done">
+            <button class="done-button" onclick="Done()">Completar Día</button>
+            <button class="faq-modal" onclick="DeployModal()"><i class="fas fa-question-circle"></i></button>
+        </div>
+        <nav>
+            <label>Otras utilidades:</label>
+            <ul>
+                <li><a href="index.html">Calculadora de Energia</a></li>
+                <li><a href="table-slp.html">Tabla de producción</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="modal">
+        <div class="modal__content">
+            <h2 class="main-title">Control de SLP <img class="SmoothLovePotion" src="img/SmoothLovePotion.png"> </h2>
+            <br>
+            <p>En el control de SLP, puedes calcular y guardar en una base de datos (interna del navegador), tu producción diaria.</p>
+            <br>
+            <h3>Como usar:</h3>
+            <br>
+            <p>Cada casilla representa el numero de partidas ganadas, y estan separadas por SLP, tomando como base la siguiente tabla:</p>
+            <br>
+            <img class="slp-per-trophies" src="img/SLPporCopas.webp" alt="SLP Por copas">
+            <br>
+            <br>
+            <h3>Ejemplo:</h3>
+            <br>
+            <p>
+                Supongamos que estás en <b>1340</b> copas, 
+                por cada partida ganada, obtienes <b>9</b> SLP. Para ayudarte
+                a calcular lo que has producido; por cada victoria, le sumas uno
+                a la caja de <b>9</b> SLP (si es que has ganado 9, por supuesto).
+                <br>
+                <br>
+                Al final de tus partidas, y hayas contabilizado tus partidas ganadas
+                con ayuda de la página, harás <b>click</b> en el botón de <b><i>"Completar día"</i></b>
+                y el sitio web se encargará de decirte cuanto <b>SLP</b> has producido
+                el día de hoy. <b>(Tomando en cuenta la aventura, y la misión diaria)</b>
+            </p>
+
+            <br>
+            <h3>Almacenamiento Local</h3>
+            <br>
+            <p>
+                Cuando hagas click en el botón <b>Completar Día</b>, además de ver
+                tu producción de hoy, también en el <b>Local Storage</b> 
+                (Almacenamiento Local), se guardara tu producción de hoy, 
+                junto con la fecha por si deseas comparar tus datos.
+                <br>
+                <br>
+                <a href="table-slp.html">Click aquí</a> para ver mis datos
+                <br>
+                <br>
+                Los datos sin embargo, son almacenados en el navegador,
+                si se borran los <b>datos de navegación</b>, o se accede desde otro navegador
+                los datos no estaran disponibles.
+            </p>
+
+            <br>
+            <h3>Caja 'adicionales'</h3>
+            <br>
+            <p>
+                La caja <b>"Adicionales"</b> representa 
+                los SLP ganados en casos poco comunes,
+                en este caso las partidas empatadas.
+                <br>
+                Supongamos que el día de hoy empataste dos partidas
+                y te dieron <b>4 <img class="SmoothLovePotion" src="img/SmoothLovePotion.png"></b>
+                por cada empate, en ese caso, pondrías 8 a la caja de 'adicionales',
+                para que se le sume a tu producción
+            </p>
+
+            <div class="close" onclick="closeModal()"><i class="fas fa-times-circle"></i></div>
+        </div>
+    </div>
+    <div class="background-image"></div>
+
+    <script src="daily-slp.js"></script>
+</body>
+</html>

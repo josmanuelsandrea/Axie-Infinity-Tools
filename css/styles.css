@@ -1,0 +1,225 @@
+@import url('dailySLP.css');
+@import url('table-slp.css');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, .7);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.roundCounter__label {
+    font-size: 3rem;
+}
+
+.roundCounter__number {
+    font-size: 3rem;
+    text-decoration: underline;
+}
+
+.container__counter {
+    display: flex;
+    align-items: center;
+}
+
+.counter__energy {
+    width: auto;
+    height: 40px;
+}
+
+.counter__label {
+    font-size: 2rem;
+}
+
+.buttons .label__button {
+    display: none;
+    font-size: 1.3rem;
+    margin: 0rem .5rem;
+}
+
+.counter__number {
+    font-size: 2rem;
+    margin-left: 1rem;
+    font-weight: 800;
+    color: yellow;
+}
+
+.activate-sumAndrest{
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.activate-sumAndrest input {
+    margin-right: .5rem;
+    width: 1rem;
+    height: 1rem;
+}
+
+.container__controllers {
+    display: flex;
+    margin-top: 2rem;
+}
+
+.controllers__earn, .controllers__spend, .controllers__stole {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 1rem;
+}
+
+.controllers__earn {
+    color: greenyellow;
+}
+
+.controllers__spend {
+    color: red;
+}
+
+.controllers__stole {
+    color: violet;
+}
+
+.cont__label {
+    display: flex;
+}
+
+.container__controllers input {
+    margin-top: .5rem;
+    border:none;
+    background:white;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 2px solid black;
+    font-weight: 600;
+    cursor: cell;
+}
+
+.container__controllers label {
+    font-size: 1.5rem;
+}
+
+.container__controllers input.subtract-button {
+    background-color: #ff0038;
+    width: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.container__done {
+    margin-top: 2rem;
+}
+
+.container__done input {
+    border:none;
+    background:rgb(3, 134, 42);
+    font-weight: 600;
+    border: 1px solid black;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.container__reset input {
+    margin-top: 1rem;
+    background-color: crimson;
+    border:none;
+    font-weight: 600;
+    border: 1px solid black;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.container nav {
+    margin-top: 2rem;
+}
+
+.container nav label {
+    font-size: 1.3rem;
+}
+
+.container nav ul{
+    margin-top: 1rem;
+}
+
+.container nav ul li {
+    margin: .5rem 0;
+}
+
+.container nav ul li a {
+    color: rgb(25, 212, 25);
+    font-size: 1.2rem;
+}
+
+.background-image {
+    min-height: 100vh;
+    background-image: url('../img/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+@media screen and (max-width: 425px){
+    :root {
+        font-size: 12px;
+    }   
+
+    .container__controllers input {
+        padding: 1rem 2rem;
+    }
+
+    .roundCounter__number {
+        font-size: 3rem;
+    }
+
+    .container__controllers label {
+        font-size: 2rem;
+    }
+
+    .container__done input {
+        padding: 1rem 2rem;
+    }
+
+    .container__reset input {
+        padding: 1rem 2rem;
+    }
+
+    .container nav ul li a {
+        font-size: 1.5rem;
+    }
+
+    .modal__content {
+        width: 26rem;
+    }
+
+    .buttons .label__button {
+        font-size: 1.6rem;
+    }
+
+    .activate-sumAndrest input {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    :root {
+        font-size: 12px;
+    }
+}
