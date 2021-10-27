@@ -9,6 +9,14 @@
     font-family: sans-serif;
 }
 
+body {
+    background-image: url('../img/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
 .container {
     background-color: rgba(0, 0, 0, .7);
     min-height: 100vh;
@@ -17,6 +25,7 @@
     align-items: center;
     flex-direction: column;
     color: white;
+    width: 100%;
 }
 
 .roundCounter__label {
@@ -165,16 +174,52 @@
     font-size: 1.2rem;
 }
 
-.background-image {
+/* .background-image {
     min-height: 100vh;
     background-image: url('../img/background.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: -1;
+} */
+
+.container__history {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    width: 50%;
+    color: white;
+}
+
+.container__history table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.container__history table th {
+    padding: 1rem;
+    border: 1px solid blue;
+}
+
+.container__history table td {
+    padding: .5rem;
+    border: 1px solid cyan;
+}
+
+.container__history i.fa-bolt {
+    color: yellow;
+}
+
+.container__history i.fa-plus {
+    color: greenyellow;
+}
+
+.container__history i.fa-ban {
+    color: red;
 }
 
 @media screen and (max-width: 425px){
@@ -217,6 +262,10 @@
     .activate-sumAndrest input {
         width: 2rem;
         height: 2rem;
+    }
+
+    .container__history {
+        width: 70%;
     }
 
     :root {
