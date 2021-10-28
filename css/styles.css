@@ -1,5 +1,6 @@
 @import url('dailySLP.css');
 @import url('table-slp.css');
+@import url('reutilizable.css');
 
 
 *{
@@ -174,18 +175,6 @@ body {
     font-size: 1.2rem;
 }
 
-/* .background-image {
-    min-height: 100vh;
-    background-image: url('../img/background.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: -1;
-} */
-
 .container__history {
     display: flex;
     justify-content: center;
@@ -220,6 +209,68 @@ body {
 
 .container__history i.fa-ban {
     color: red;
+}
+
+.index__modal {
+    position:fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.index__modal__content {
+    position: relative;
+    width: 50%;
+    padding: 2rem;
+    background-color: rgb(214, 214, 214);
+    border-radius: .5rem;
+}
+
+.index__modal__content .paypal {
+    color: #00457C;
+    font-size: 3rem;
+    margin-right: 1rem;
+}
+
+.index__modal__content ul {
+    list-style: none;
+}
+
+.index__modal__content ul li {
+    display: flex;
+    align-items: center;
+}
+
+.index__modal__content .platform-data {
+    text-decoration: underline;
+}
+
+.index__modal__content .modal__close {
+    position:absolute;
+    top: -10%;
+    left: 97%;
+    color: red;
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+.modal__close i {
+    pointer-events: none;
+}
+
+@media screen and (max-width: 1032px){
+    :root {
+        font-size: 14px;
+    }
+
+    .index__modal__content {
+        width: 70%;
+    }
 }
 
 @media screen and (max-width: 425px){
@@ -268,7 +319,7 @@ body {
         width: 70%;
     }
 
-    :root {
-        font-size: 12px;
+    .index__modal__content .modal__close {
+        font-size: 2rem;
     }
 }

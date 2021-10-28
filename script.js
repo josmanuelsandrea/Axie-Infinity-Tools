@@ -115,3 +115,15 @@ function alterateEnergy(operation){
         actualEnergy.innerText = parseInt(actualEnergy.innerText) - 1;
     }
 }
+
+function closeAModal(){
+    let closureButtons = document.querySelectorAll('.modal__close');
+    closureButtons.forEach(item =>{
+        item.addEventListener('click', (e)=>{
+            let target = e.target.getAttribute('close-modal');
+            document.getElementById(target).style.display = 'none';
+        });
+    });
+}
+
+closeAModal()
