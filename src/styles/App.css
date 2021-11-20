@@ -1,0 +1,369 @@
+/* ? ----Navbar---- */
+
+.nav {
+    width: 100%;
+    box-shadow: 0 0 5px rgb(0, 0, 0, .5);
+    background-color:rgb(255,255,255, .8);
+}
+
+    .navUl {
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+    }
+
+        .navElement {
+            padding: 1.3rem 3.3rem;
+            transition: background-color .5s;
+            white-space: nowrap;
+        }
+
+        @media screen and (max-width: 510px){
+            .navElement {
+                padding: 0.8rem 1.3rem;
+                font-size: 1.5rem;
+            }
+        }
+
+        @media  screen and (max-width: 510px){
+            .navElement {
+                padding: 2rem 1.3rem;
+            }
+        }
+
+        .navElement:hover {
+            background-color: rgb(0, 0, 0, 1);
+            color:white;
+            cursor:pointer;
+        }
+
+/* ! Calculator */
+
+.Calculator {
+    margin-top: 2rem;
+    color:white;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: sans-serif;
+    width: 100%;
+}
+
+    .number {
+        color:red;
+        text-decoration: underline;
+    }
+
+    .bloodmoonicon {
+        width: 28px;
+        margin-left: 1rem;
+    }
+
+    @media  screen and (max-width: 510px){
+        .RoundCounter {
+            font-size: 1.5rem;
+        }
+    }
+
+    @media screen and (max-width: 375px){
+        .RoundCounter {
+            font-size: 1.9rem;
+        }
+    }
+
+    /*----*/
+
+    .energyDiv {
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .energyTwoPoints {
+        font-size: 2rem;
+    }
+
+    @media screen and (max-width: 510px){
+        .energyTwoPoints {
+            font-size: 3rem;
+        }
+    }
+
+    .energyImg {
+        width: 40px;
+        height: auto;
+    }
+
+    .energyNumber {
+        font-size: 2.3rem;
+        margin-left: .5rem;
+        color: yellow;
+    }
+
+    @media screen and (max-width: 510px){
+        .energyNumber {
+            font-size: 3rem;
+        }
+    }
+
+    @media screen and (max-width: 375px){
+        .energyNumber {
+            font-size: 5rem;
+        }
+
+        .energyImg {
+            width: 45px;
+            height: auto;
+        }
+    }
+
+    /*-----*/
+
+    .handleEnergy {
+        margin-top: 1rem;
+    }
+
+    .handleEnergyButton {
+        background-color: white;
+        color: black;
+        border: none;
+        font-size: 1.3rem;
+        padding:.3rem .7rem;
+        margin: 0 1rem;
+        transition: ease-in-out, background-color .2s, color .2s;
+        cursor:pointer;
+    }
+
+    .handleEnergyButton:hover {
+        background-color:black;
+        color: white;
+    }
+
+    /*-----*/
+
+    .ActivateControls {
+        margin-top: 1rem;
+        display: flex;
+        align-items: center;
+    }
+
+    .ActivateControlCheckbox {
+        height: 1rem;
+        width: 1rem;
+        margin-right: 1rem;
+        transition: all .5s
+    }
+
+    @media screen and (max-width: 510px){
+        .ActivateControlCheckbox {
+            height: 2rem;
+            width: 2rem;
+        }
+    
+        .ActivateControls label {
+            font-size: 2rem;
+        }
+
+        .handleEnergyButton {
+            font-size: 3rem;
+        }
+    }
+
+    @media screen and (max-width: 375px){
+        .ActivateControlCheckbox {
+            height: 3rem;
+            width: 3rem;
+        }
+    
+        .ActivateControls label {
+            font-size: 2.2rem;
+        }
+    }
+
+    /*-----*/
+
+    .StandarControls {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem 0;
+    }
+
+        .Control {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 1rem;
+        }
+
+        div.Control p {
+            font-size: 1.5rem;
+        }
+
+        .ControlText {
+            border: 2px solid black;
+            background-color:white;
+            font-weight: 600;
+            font-size: 1rem;
+            padding: 0.5rem 1.5rem;
+            border-radius: 5px;
+            transition: ease-in-out, background-color .2s, border .7s;
+        }
+
+        .ControlText:hover {
+            cursor: pointer;
+            background-color: rgb(0, 0, 0, .2);
+            color: white;
+            border: 2px solid white;
+        }
+
+        .ControlMinus {
+            padding: .5rem 1.2rem;
+            background-color:#ff0038;
+            font-size: 1rem;
+            font-weight: 600;
+            margin-top: 1rem;
+            border: none;
+            transition: all .5s;
+            border: transparent 1px solid;
+        }
+
+        .ControlMinus:hover {
+            background-color:rgb(0, 0, 0, .5);
+            color:#ff0038;
+            border: 1px solid #ff0038;
+            cursor: pointer;
+        }
+
+        @media screen and (max-width: 510px){
+            div.Control p {
+                font-size: 2rem;
+            }
+
+            .ControlText {
+                font-size: 1.6rem;
+            }
+
+            .ControlMinus {
+                font-size: 1.5rem;
+            }
+        }
+
+        @media screen and (max-width: 375px){
+            div.Control p {
+                font-size: 2.5rem;
+            }
+
+            .ControlText {
+                font-size: 2.2rem;
+            }
+
+            .ControlMinus {
+                font-size: 2.3rem;
+            }
+        }
+
+    .FinishControls {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+        .EndTurn {
+            background-color: rgb(3, 134, 42);
+            border: 1px solid black;
+            padding: 0.5rem 1.5rem;
+            font-size: 1rem;
+            font-weight: 600;
+            margin-top: 2rem;
+        }
+
+        .EndTurn:hover {
+            cursor: pointer;
+        }
+
+        .ResetButton {
+            background-color: #ff0038;
+            border: 1px solid black;
+            padding: 0.5rem 1.5rem;
+            font-size: 1rem;
+            font-weight: 600;
+            margin-top: 1rem;
+        }
+
+        @media screen and (max-width: 510px){
+            .EndTurn {
+                font-size: 1.5rem;
+            }
+
+            .ResetButton {
+                font-size: 1.5rem;
+            }
+        }
+
+        @media screen and (max-width: 375px){
+            .EndTurn {
+                font-size: 1.9rem;
+            }
+
+            .ResetButton {
+                font-size: 1.9rem;
+            }
+        }
+
+        .ResetButton:hover {
+            cursor: pointer;
+        }
+
+        /*----*/
+
+        .actionHistory { 
+            display: flex;
+            justify-content: center;
+            margin-top: 1rem;
+            width: 50%;
+            color: white;
+        }
+
+        @media screen and (max-width: 510px){
+            .actionHistory {
+                width: 80%;
+                font-size: 1.3rem;
+            }
+        }
+
+        @media screen and (max-width: 375px){
+            .actionHistory {
+                font-size: 1.6rem;
+            }
+        }
+
+        i.fa-bolt {
+            color: yellow;
+        }
+        
+        i.fa-plus {
+            color: greenyellow;
+        }
+        
+        i.fa-ban {
+            color: red;
+        }
+
+@media screen and (max-width: 560px){
+    :root {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 510px){
+    :root {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 375px){
+    :root {
+        font-size: 8px;
+    }
+}
