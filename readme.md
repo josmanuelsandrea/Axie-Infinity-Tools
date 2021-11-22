@@ -36,3 +36,5 @@
 <hr>
 
 <span style='font-size: 28px; color:#5ED3F3; font-weight: 700;'>React Version</span>
+
+## This app has a react version, you can check it out on the <span><a style='color:#5ED3F3' href='https://github.com/thestuckboy/Axie-Infinity-Tools/tree/react-version'>'react-version'</a></span> branch.
