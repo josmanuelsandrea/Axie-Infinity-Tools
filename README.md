@@ -40,7 +40,7 @@ Scripts below are description by default
 
 <br />
 
-Demo here: (React demo not available yet 😢)
+Demo: (React demo not available yet 😢)
 
 <br />
 
