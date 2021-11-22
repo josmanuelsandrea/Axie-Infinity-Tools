@@ -8,8 +8,10 @@
 >components are a lot better, so it is possible to do a code transformation from
 >class-based components to functional components.
 >
->I want to thank mainly Jose and Diego for their advice that helped me a little bit 
->to create the interface a little more friendly. If they're reading this, they know who they are. <3
+>I want to thank mainly 'Jokz' and 'Cyberev' for their advice that helped me a little bit 
+>to create the interface a little more friendly. If they're reading this, they know who they are. <3.
+>
+>And finally thank Kittynub, i love you.
 
 
 ## How to run the app:
