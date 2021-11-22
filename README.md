@@ -1,6 +1,50 @@
-# Getting Started with Create React App
+# React Version of Axie Infinity tools
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+>This is my first web project created in 'react'. It is a "translation" of the first project 
+>created mainly with HTML and native Javascript. 
+>
+>Honestly the first project is a disaster and is a bit difficult to maintain, so while learning 'React', I have done this translation 
+>with class-based components (which at the time of writing this I realized that functional
+>components are a lot better, so it is possible to do a code transformation from
+>class-based components to functional components.
+>
+>I want to thank mainly Jose and Diego for their advice that helped me a little bit 
+>to create the interface a little more friendly. If they're reading this, they know who they are. <3
+
+
+## How to run the app:
+
+
+### 1. Clone the repository
+    git clone https://github.com/thestuckboy/Axie-Infinity-Tools.git
+
+### 2. Go to the project folder
+    cd Axie-Infinity-Tools
+
+### 3. Switch to react-version branch
+
+    git checkout react-version
+
+### 4. Install the dependencies
+
+    npm install
+
+### Now you're ready to run the scripts below! ❤️
+
+---
+<br />
+
+**NOTE**
+
+Scripts below are description by default
+
+<br />
+
+Demo here: (React demo not available yet 😢)
+
+<br />
+
+---
 
 ## Available Scripts
 
@@ -38,33 +82,3 @@ If you aren’t satisfied with the build tool and configuration choices, you can
 Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
